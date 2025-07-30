@@ -4,7 +4,7 @@
 **Semester**: Genap / Tahun Ajaran 2024–2025
 **Nama**: Novi Fitriyani
 **NIM**: 240202843
-**Modul yang Dikerjakan**: Modul 1 – *System Call dan Instrumentasi Kernel*
+**Modul yang Dikerjakan**: Modul 1 – System Call dan Instrumentasi Kernel
 
 ---
 
@@ -17,7 +17,11 @@ Modul 1 – System Call dan Instrumentasi Kernel:
 
 ## 🛠️ Rincian Implementasi
 
-Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
+- Menambahkan system call sys_getpinfo() dan sys_getreadcount() di file sysproc.c.
+- Mendaftarkan syscall baru pada: syscall.c, syscall.h, usys.S, dan user.h
+- Menambahkan struktur struct pinfo di proc.h untuk menyimpan data proses.
+- Menambahkan variabel global readcount di kernel untuk mencatat jumlah pemanggilan read().
+- Membuat dua program uji: ptest.c dan rtest.c
 
 ### Contoh untuk Modul 1:
 
