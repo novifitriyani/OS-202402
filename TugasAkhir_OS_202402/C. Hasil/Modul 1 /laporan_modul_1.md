@@ -55,7 +55,7 @@ Read Count Setelah: 13
 ---
 
 📸 Screenshot:
-![hasil rtest](https://raw.githubusercontent.com/novifitriyani/os-2024/main/TugasAkhir_OS_202402/C.%20Hasil/Modul%201/Screenshot%202025-07-19%20120847.png)
+<img width="940" height="514" alt="image" src="https://github.com/user-attachments/assets/0ed8e068-229e-4eec-9063-8a5ab235ec24" />
 
 
 
