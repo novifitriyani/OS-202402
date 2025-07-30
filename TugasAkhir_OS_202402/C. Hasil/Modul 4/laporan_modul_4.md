@@ -68,7 +68,7 @@ Write blocked as expected
 * Kesalahan pada register device major menyebabkan panic saat akses device
 * Permasalahan read-only baru terdeteksi setelah writei() dimodifikasi
 
-```
+---
 
 ## 📚 Referensi
 
@@ -76,4 +76,4 @@ Write blocked as expected
 * Repositori xv6-public: https://github.com/mit-pdos/xv6-public
 * Diskusi praktikum dan eksperimen langsung dengan xv6
 
-```
+---
