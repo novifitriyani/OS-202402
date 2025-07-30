@@ -61,7 +61,6 @@ Write blocked as expected
 <img width="769" height="356" alt="image" src="https://github.com/user-attachments/assets/774c709c-c573-4873-8e7a-7ead8684aca7" />
 
 ```
----
 ```
 ## ⚠️ Kendala yang Dihadapi
 ```
@@ -69,7 +68,7 @@ Write blocked as expected
 * Kesalahan pada register device major menyebabkan panic saat akses device
 * Permasalahan read-only baru terdeteksi setelah writei() dimodifikasi
 
----
+```
 
 ## 📚 Referensi
 
