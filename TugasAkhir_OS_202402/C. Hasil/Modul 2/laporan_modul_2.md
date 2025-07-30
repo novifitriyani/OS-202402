@@ -41,7 +41,6 @@ Parent selesai
 
 📷 Screenshot:
 
-```
 <img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/02f3cabd-5c94-453d-9020-a49ba84540f4" />
 
 
