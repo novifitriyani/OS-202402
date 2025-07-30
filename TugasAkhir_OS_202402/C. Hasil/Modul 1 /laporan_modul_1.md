@@ -23,25 +23,12 @@ Modul 1 – System Call dan Instrumentasi Kernel:
 - Menambahkan variabel global readcount di kernel untuk mencatat jumlah pemanggilan read().
 - Membuat dua program uji: ptest.c dan rtest.c
 
-### Contoh untuk Modul 1:
-
-* Menambahkan dua system call baru di file `sysproc.c` dan `syscall.c`
-* Mengedit `user.h`, `usys.S`, dan `syscall.h` untuk mendaftarkan syscall
-* Menambahkan struktur `struct pinfo` di `proc.h`
-* Menambahkan counter `readcount` di kernel
-* Membuat dua program uji: `ptest.c` dan `rtest.c`
 ---
 
 ## ✅ Uji Fungsionalitas
-
-Tuliskan program uji apa saja yang Anda gunakan, misalnya:
-
-* `ptest`: untuk menguji `getpinfo()`
-* `rtest`: untuk menguji `getReadCount()`
-* `cowtest`: untuk menguji fork dengan Copy-on-Write
-* `shmtest`: untuk menguji `shmget()` dan `shmrelease()`
-* `chmodtest`: untuk memastikan file `read-only` tidak bisa ditulis
-* `audit`: untuk melihat isi log system call (jika dijalankan oleh PID 1)
+Program uji yang digunakan:
+- ptest: menampilkan informasi tiga proses yang sedang aktif (init, sh, ptest)
+- rtest: menampilkan nilai readcount sebelum dan sesudah melakukan pembacaan (misalnya input string “hello”)
 
 ---
 
@@ -49,26 +36,23 @@ Tuliskan program uji apa saja yang Anda gunakan, misalnya:
 
 Lampirkan hasil uji berupa screenshot atau output terminal. Contoh:
 
-### 📍 Contoh Output `cowtest`:
+### 📍 Output `ptest`:
 
 ```
-Child sees: Y
-Parent sees: X
+PID     MEM     NAME
+1       12288   init
+2       16384   sh
+3       12288   ptest
 ```
 
-### 📍 Contoh Output `shmtest`:
+### 📍 Contoh Output `rtest`:
 
 ```
-Child reads: A
-Parent reads: B
+Read Count Sebelum: 12
+hello
+Read Count Setelah: 13
 ```
-
-### 📍 Contoh Output `chmodtest`:
-
-```
-Write blocked as expected
-```
-
+📷 Screenshot
 Jika ada screenshot:
 
 ```
@@ -79,20 +63,16 @@ Jika ada screenshot:
 
 ## ⚠️ Kendala yang Dihadapi
 
-Tuliskan kendala (jika ada), misalnya:
-
-* Salah implementasi `page fault` menyebabkan panic
-* Salah memetakan alamat shared memory ke USERTOP
-* Proses biasa bisa akses audit log (belum ada validasi PID)
+- Awalnya terjadi error karena kesalahan pemanggilan pointer terhadap ptable yang merupakan pointer ke struktur struct pinfo, bukan struct proc.
+- Juga terjadi error incomplete type karena belum meng-include header yang berisi definisi spinlock (#include "spinlock.h").
+- Perlu perhatian khusus dalam penggunaan argptr() dan struktur pointer untuk syscall agar data tidak corrupt.
 
 ---
 
 ## 📚 Referensi
 
-Tuliskan sumber referensi yang Anda gunakan, misalnya:
-
-* Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
-* Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
-* Stack Overflow, GitHub Issues, diskusi praktikum
+- Buku xv6 MIT: https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf
+- Repositori xv6-public: https://github.com/mit-pdos/xv6-public
+- Forum diskusi dan dokumentasi praktikum
 
 ---
