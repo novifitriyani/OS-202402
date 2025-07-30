@@ -63,7 +63,7 @@ Write blocked as expected
 ```
 ```
 ## ⚠️ Kendala yang Dihadapi
-```
+---
 * File /dev/random tidak otomatis muncul setelah booting ulang — solusinya dengan menambahkan perintah mknod ke init.c
 * Kesalahan pada register device major menyebabkan panic saat akses device
 * Permasalahan read-only baru terdeteksi setelah writei() dimodifikasi
@@ -71,7 +71,7 @@ Write blocked as expected
 ---
 
 ## 📚 Referensi
-
+---
 * Buku xv6 MIT: https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf
 * Repositori xv6-public: https://github.com/mit-pdos/xv6-public
 * Diskusi praktikum dan eksperimen langsung dengan xv6
