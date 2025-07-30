@@ -68,7 +68,6 @@ Write blocked as expected
 * Kesalahan pada register device major menyebabkan panic saat akses device
 * Permasalahan read-only baru terdeteksi setelah writei() dimodifikasi
 
----
 
 ## 📚 Referensi
 ---
