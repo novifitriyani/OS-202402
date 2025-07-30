@@ -90,6 +90,7 @@ Access denied or error
 
 <img width="701" height="984" alt="image" src="https://github.com/user-attachments/assets/e290b9fd-dab4-4e85-a69f-eaedc2b626d1" />
 
+<img width="943" height="463" alt="image" src="https://github.com/user-attachments/assets/f2b7d58b-cb89-4724-9e17-2a9f259a7426" />
 
 
 ```
