@@ -61,7 +61,6 @@ Write blocked as expected
 <img width="769" height="356" alt="image" src="https://github.com/user-attachments/assets/774c709c-c573-4873-8e7a-7ead8684aca7" />
 
 ```
-```
 ## ⚠️ Kendala yang Dihadapi
 ```
 * File /dev/random tidak otomatis muncul setelah booting ulang — solusinya dengan menambahkan perintah mknod ke init.c
@@ -76,4 +75,4 @@ Write blocked as expected
 * Repositori xv6-public: https://github.com/mit-pdos/xv6-public
 * Diskusi praktikum dan eksperimen langsung dengan xv6
 
----
+```
