@@ -62,7 +62,7 @@ Write blocked as expected
 
 ```
 ---
-
+```
 ## ⚠️ Kendala yang Dihadapi
 ```
 * File /dev/random tidak otomatis muncul setelah booting ulang — solusinya dengan menambahkan perintah mknod ke init.c
