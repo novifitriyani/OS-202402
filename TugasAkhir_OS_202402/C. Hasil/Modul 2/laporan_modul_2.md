@@ -42,7 +42,8 @@ Parent selesai
 📷 Screenshot:
 
 ```
-![hasil cowtest](./screenshots/cowtest_output.png)
+<img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/78f9257b-3b28-4ac3-979d-3f378005768f" />
+
 ```
 
 ---
