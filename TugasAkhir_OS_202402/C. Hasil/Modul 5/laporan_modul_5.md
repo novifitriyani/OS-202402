@@ -88,13 +88,12 @@ Access denied or error
 
 📷 Screenshot:
 
-```
 <img width="701" height="984" alt="image" src="https://github.com/user-attachments/assets/e290b9fd-dab4-4e85-a69f-eaedc2b626d1" />
 
 
 
 ```
-
+```
 ---
 
 ## ⚠️ Kendala yang Dihadapi
