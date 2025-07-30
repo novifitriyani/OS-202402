@@ -68,7 +68,7 @@ Write blocked as expected
 * Kesalahan pada register device major menyebabkan panic saat akses device
 * Permasalahan read-only baru terdeteksi setelah writei() dimodifikasi
 
-
+---
 ## 📚 Referensi
 
 * Buku xv6 MIT: https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf
