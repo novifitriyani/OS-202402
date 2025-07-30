@@ -56,7 +56,8 @@ Read Count Setelah: 13
 Jika ada screenshot:
 
 ```
-[![hasil cowtest](./screenshots/cowtest_output.png)](https://github.com/novifitriyani/os-2024/blob/main/TugasAkhir_OS_202402/C.%20Hasil/Modul%201%20/screenshot/Screenshot%202025-07-19%20120847.png?raw=true)
+![hasil rtest](https://raw.githubusercontent.com/novifitriyani/os-2024/main/TugasAkhir_OS_202402/C.%20Hasil/Modul%201/Screenshot%202025-07-19%20120847.png)
+
 ```
 
 ---
