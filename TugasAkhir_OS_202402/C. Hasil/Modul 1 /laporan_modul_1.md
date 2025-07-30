@@ -34,7 +34,7 @@ Program uji yang digunakan:
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal. Contoh:
+Lampirkan hasil uji berupa screenshot atau output terminal.
 
 ### 📍 Output `ptest`:
 
@@ -55,6 +55,7 @@ Read Count Setelah: 13
 ---
 
 📸 Screenshot:
+
 <img width="940" height="514" alt="image" src="https://github.com/user-attachments/assets/0ed8e068-229e-4eec-9063-8a5ab235ec24" />
 
 
