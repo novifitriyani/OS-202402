@@ -64,8 +64,10 @@ Parent reads: B
 
 📷 Screenshot:
 
-```
-![hasil cowtest](./screenshots/cowtest_output.png)
+<img width="1028" height="433" alt="image" src="https://github.com/user-attachments/assets/4c5f7a43-6f2d-40cc-9bf1-86d5998c5630" />
+
+
+
 ```
 
 ---
