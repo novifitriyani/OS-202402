@@ -13,7 +13,7 @@
 
 Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
 
-**Modul 3 – Manajemen Memori Tingkat Lanjut**
+**Modul 3 – Manajemen Memori Tingkat Lanjut**  
 Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6, yaitu:
 - Implementasi Copy-on-Write Fork (CoW) untuk meningkatkan efisiensi fork()
 - Implementasi Shared Memory ala System V, yaitu shmget(key) dan shmrelease(key) untuk berbagi memori antar proses
