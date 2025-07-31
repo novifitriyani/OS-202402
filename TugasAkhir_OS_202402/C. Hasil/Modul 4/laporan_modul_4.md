@@ -10,7 +10,7 @@
 
 ## 📌 Deskripsi Singkat Tugas
 
-Modul 4 – Subsistem Kernel Alternatif:
+**Modul 4 – Subsistem Kernel Alternatif**  
 Menambahkan dua fitur ke sistem operasi xv6, yaitu:
 - chmod(path, mode) syscall untuk mengatur mode file (read-only atau read-write)
 - Driver pseudo-device /dev/random yang menghasilkan byte acak saat dibaca
@@ -34,7 +34,7 @@ Menambahkan dua fitur ke sistem operasi xv6, yaitu:
 ---
 
 ## ✅ Uji Fungsionalitas
-
+Program uji yang digunakan:
 * chmodtest: untuk menguji syscall chmod(path, mode)
 * randomtest: untuk menguji pembacaan dari /dev/random
 
@@ -42,7 +42,7 @@ Menambahkan dua fitur ke sistem operasi xv6, yaitu:
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal.
+Hasil uji berupa output terminal dan screenshot.
 
 ### 📍 Output `chmodtest`:
 
