@@ -11,7 +11,7 @@
 
 ## 📌 Deskripsi Singkat Tugas
 
-**Modul 3 – Manajemen Memori Tingkat Lanjut**  
+**Modul 3 – Manajemen Memori Tingkat Lanjut (xv6-public x86)**  
 Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6, yaitu:
 - Implementasi Copy-on-Write Fork (CoW) untuk meningkatkan efisiensi fork()
 - Implementasi Shared Memory ala System V, yaitu shmget(key) dan shmrelease(key) untuk berbagi memori antar proses
