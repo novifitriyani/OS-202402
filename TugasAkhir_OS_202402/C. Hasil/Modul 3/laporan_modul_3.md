@@ -76,13 +76,13 @@ Parent reads: B
 
 ## ⚠️ Kendala yang Dihadapi
 
-Kendala Implementasi Copy-on-Write (CoW):
+**Kendala Implementasi Copy-on-Write (CoW)**:
 - Terjadi page fault berulang dan panic saat proses anak mencoba menulis ke memori yang seharusnya disalin → penyebabnya adalah handler page fault belum menangani penyalinan halaman read-only dengan benar.
 - Lupa mengatur flag PTE_W saat mengalokasikan salinan halaman baru setelah copy-on-write, sehingga halaman tetap read-only dan kembali memicu fault.
 - Reference count (ref_count[]) tidak ter-decrement dengan benar pada saat exit() → menyebabkan kebocoran memori.
 - Beberapa halaman kernel tidak boleh dibagi (seperti stack) namun ikut dimap secara CoW → menyebabkan error saat write.
 
-Kendala Implementasi Shared Memory:
+**Kendala Implementasi Shared Memory**:
 - Terjadi panic trap 14 saat proses mengakses shared memory → ternyata alamat virtual yang digunakan tidak konsisten atau sudah digunakan proses sebelumnya.
 - Error multiple definition of 'shmtab' karena shmtab dideklarasikan di shm.h dan vm.c → seharusnya hanya satu deklarasi extern di header.
 - Shared memory tidak termapping ulang dengan benar di proses anak setelah fork() → menyebabkan akses ke NULL atau unmapped address.
