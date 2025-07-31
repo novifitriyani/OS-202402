@@ -11,8 +11,6 @@
 
 ## 📌 Deskripsi Singkat Tugas
 
-Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
-
 **Modul 3 – Manajemen Memori Tingkat Lanjut**  
 Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6, yaitu:
 - Implementasi Copy-on-Write Fork (CoW) untuk meningkatkan efisiensi fork()
@@ -23,53 +21,49 @@ Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6
 
 Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
 
-### Contoh untuk Modul 1:
+###  Copy-on-Write Fork
 
-* Menambahkan dua system call baru di file `sysproc.c` dan `syscall.c`
-* Mengedit `user.h`, `usys.S`, dan `syscall.h` untuk mendaftarkan syscall
-* Menambahkan struktur `struct pinfo` di `proc.h`
-* Menambahkan counter `readcount` di kernel
-* Membuat dua program uji: `ptest.c` dan `rtest.c`
+- Mengubah fungsi fork() di proc.c agar menggunakan teknik copy-on-write.
+- Menambahkan bit PTE_COW di mmu.h untuk menandai page yang dibagi read-only.
+- Menambahkan handler khusus di trap.c untuk menangani page fault akibat CoW.
+- Menambahkan fungsi incref() dan decref() untuk reference count per page.
+- Memodifikasi walkpgdir() agar mendukung flag CoW.
+- Memastikan exit() dan wait() melakukan decrement ref_count yang benar.
+
+### Shared Memory ala System V
+- Menambahkan dua syscall baru shmget(int key) dan shmrelease(int key) di sysproc.c dan usys.S.
+- Menambahkan struktur shmtab[] sebagai tabel shared memory di vm.c.
+- Shared memory dipetakan ke alamat virtual dari USERTOP ke bawah.
+- Menambahkan proses remapping ulang di fork() agar anak tetap bisa mengakses shared memory.
+  
 ---
 
 ## ✅ Uji Fungsionalitas
 
-Tuliskan program uji apa saja yang Anda gunakan, misalnya:
-
-* `ptest`: untuk menguji `getpinfo()`
-* `rtest`: untuk menguji `getReadCount()`
-* `cowtest`: untuk menguji fork dengan Copy-on-Write
-* `shmtest`: untuk menguji `shmget()` dan `shmrelease()`
-* `chmodtest`: untuk memastikan file `read-only` tidak bisa ditulis
-* `audit`: untuk melihat isi log system call (jika dijalankan oleh PID 1)
+* cowtest: untuk menguji fork dengan Copy-on-Write
+* shmtest: untuk menguji shmget() dan shmrelease()
 
 ---
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal. Contoh:
+Lampirkan hasil uji berupa screenshot atau output terminal.
 
-### 📍 Contoh Output `cowtest`:
+### 📍 Output `cowtest`:
 
 ```
 Child sees: Y
 Parent sees: X
 ```
 
-### 📍 Contoh Output `shmtest`:
+### 📍 Output `shmtest`:
 
 ```
 Child reads: A
 Parent reads: B
 ```
 
-### 📍 Contoh Output `chmodtest`:
-
-```
-Write blocked as expected
-```
-
-Jika ada screenshot:
+📷 Screenshot:
 
 ```
 ![hasil cowtest](./screenshots/cowtest_output.png)
@@ -79,11 +73,10 @@ Jika ada screenshot:
 
 ## ⚠️ Kendala yang Dihadapi
 
-Tuliskan kendala (jika ada), misalnya:
-
-* Salah implementasi `page fault` menyebabkan panic
-* Salah memetakan alamat shared memory ke USERTOP
-* Proses biasa bisa akses audit log (belum ada validasi PID)
+- Implementasi awal CoW menyebabkan panic saat page fault karena salah akses bit flag PTE
+- Beberapa halaman tidak di-set CoW dengan benar karena kesalahan logika duplikasi PTE
+- Alamat virtual shared memory yang dipetakan ke USERTOP sempat berbenturan dengan area stack
+- Child process gagal mengakses shared memory karena fork() belum melakukan remap shm
 
 ---
 
