@@ -1,5 +1,4 @@
 # 📝 Laporan Tugas Akhir
-
 **Mata Kuliah**: Sistem Operasi  
 **Semester**: Genap / Tahun Ajaran 2024–2025  
 **Nama**: Novi Fitriyani  
