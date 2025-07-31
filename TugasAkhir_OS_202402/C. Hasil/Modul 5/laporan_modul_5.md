@@ -1,10 +1,10 @@
 # 📝 Laporan Tugas Akhir
 
-**Mata Kuliah**: Sistem Operasi
-**Semester**: Genap / Tahun Ajaran 2024–2025
-**Nama**: Novi Fitriyani
-**NIM**: 240202843
-**Modul yang Dikerjakan**: Modul 5 – Audit dan Keamanan Sistem (xv6-public)
+**Mata Kuliah**: Sistem Operasi  
+**Semester**: Genap / Tahun Ajaran 2024–2025  
+**Nama**: Novi Fitriyani  
+**NIM**: 240202843  
+**Modul yang Dikerjakan**: Modul 5 – Audit dan Keamanan Sistem (xv6-public)  
 
 ---
 
