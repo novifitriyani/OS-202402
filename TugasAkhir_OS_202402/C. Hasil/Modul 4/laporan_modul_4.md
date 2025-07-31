@@ -10,7 +10,7 @@
 
 ## 📌 Deskripsi Singkat Tugas
 
-**Modul 4 – Subsistem Kernel Alternatif**  
+**Modul 4 – Subsistem Kernel Alternatif (xv6-public)**  
 Menambahkan dua fitur ke sistem operasi xv6, yaitu:
 - chmod(path, mode) syscall untuk mengatur mode file (read-only atau read-write)
 - Driver pseudo-device /dev/random yang menghasilkan byte acak saat dibaca
