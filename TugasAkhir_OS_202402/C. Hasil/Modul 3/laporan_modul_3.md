@@ -13,8 +13,10 @@
 
 Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
 
-* **Modul 1 – System Call dan Instrumentasi Kernel**:
-  Menambahkan dua system call baru, yaitu `getpinfo()` untuk melihat proses yang aktif dan `getReadCount()` untuk menghitung jumlah pemanggilan `read()` sejak boot.
+**Modul 3 – Manajemen Memori Tingkat Lanjut**
+Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6, yaitu:
+- Implementasi Copy-on-Write Fork (CoW) untuk meningkatkan efisiensi fork()
+- Implementasi Shared Memory ala System V, yaitu shmget(key) dan shmrelease(key) untuk berbagi memori antar proses
 ---
 
 ## 🛠️ Rincian Implementasi
