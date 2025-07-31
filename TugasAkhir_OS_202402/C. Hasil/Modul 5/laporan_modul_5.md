@@ -36,7 +36,7 @@ Program uji yang digunakan:
 
 Hasil uji berupa output terminal dan screenshot.
 
-### 📍 Output audit (dijalankan oleh PID 1):
+### 📍 Output audit (dijalankan oleh selain PID 1):
 
 ```
 === Audit Log ===
