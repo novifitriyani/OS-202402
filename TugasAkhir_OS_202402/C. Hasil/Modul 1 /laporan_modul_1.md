@@ -9,7 +9,7 @@
 ---
 
 ## 📌 Deskripsi Singkat Tugas
-Modul 1 – System Call dan Instrumentasi Kernel:
+**Modul 1 – System Call dan Instrumentasi Kernel**:
 - getpinfo() untuk menampilkan daftar proses aktif beserta PID, penggunaan memori, dan nama proses.
 - getReadCount() untuk menghitung jumlah pemanggilan fungsi read() sejak sistem dinyalakan.
 
@@ -34,7 +34,7 @@ Program uji yang digunakan:
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal.
+Hasil uji berupa output terminal dan screenshot.
 
 ### 📍 Output `ptest`:
 
