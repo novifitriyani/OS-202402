@@ -19,7 +19,6 @@ Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6
 
 ## 🛠️ Rincian Implementasi
 
-Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
 
 ###  Copy-on-Write Fork
 
