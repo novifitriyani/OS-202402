@@ -10,7 +10,7 @@
 
 ## 📌 Deskripsi Singkat Tugas
 
-Modul 5 – Audit dan Keamanan Sistem (xv6-public):
+**Modul 5 – Audit dan Keamanan Sistem (xv6-public)**:
 - Mengimplementasikan fitur audit logging untuk semua system call yang dipanggil oleh proses, serta menambahkan syscall get_audit_log() agar log bisa diakses dari ruang pengguna (user space). Audit berguna untuk mencatat aktivitas sistem secara ringkas untuk keperluan debugging dan keamanan.
 ---
 
@@ -26,6 +26,7 @@ Modul 5 – Audit dan Keamanan Sistem (xv6-public):
 ---
 
 ## ✅ Uji Fungsionalitas
+Program uji yang digunakan:
 
 * audit: Untuk mencetak semua log syscall yang telah terekam oleh kernel, termasuk informasi PID, nomor SYSCALL, dan TICK saat syscall terjadi.
 
@@ -33,7 +34,7 @@ Modul 5 – Audit dan Keamanan Sistem (xv6-public):
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal.
+Hasil uji berupa output terminal dan screenshot.
 
 ### 📍 Output audit (dijalankan oleh PID 1):
 
