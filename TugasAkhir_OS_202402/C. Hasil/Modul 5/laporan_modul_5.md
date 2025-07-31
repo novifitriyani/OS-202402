@@ -36,7 +36,7 @@ Program uji yang digunakan:
 
 Hasil uji berupa output terminal dan screenshot.
 
-### 📍 Output audit (dijalankan oleh selain PID 1):
+### 📍 Output audit (dijalankan oleh PID 1):
 
 ```
 === Audit Log ===
@@ -81,7 +81,7 @@ Hasil uji berupa output terminal dan screenshot.
 [38] PID=3 SYSCALL=7 TICK=6588
 ```
 
-### 📍 Output audit (dijalankan oleh PID 1):
+### 📍 Output audit (dijalankan oleh selain PID 1):
 
 ```
 Access denied or error
