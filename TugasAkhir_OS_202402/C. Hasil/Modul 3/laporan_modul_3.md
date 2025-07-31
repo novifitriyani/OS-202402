@@ -2,10 +2,9 @@
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
-**Nama**: `<Novi Fitriyani>`
-**NIM**: `<Nomor Induk Mahasiswa>`
-**Modul yang Dikerjakan**:
-`(Contoh: Modul 1 – System Call dan Instrumentasi Kernel)`
+**Nama**: Novi Fitriyani
+**NIM**: 240202843
+**Modul yang Dikerjakan**: Modul 3 — Manajemen Memori Tingkat Lanjut (xv6-public x86)
 
 
 ---
