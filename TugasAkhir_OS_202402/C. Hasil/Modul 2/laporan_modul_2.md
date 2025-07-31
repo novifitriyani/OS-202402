@@ -9,8 +9,9 @@
 ---
 
 ## 📌 Deskripsi Singkat Tugas
-**Modul 2 – Penjadwalan CPU Lanjutan (Priority Scheduling Non-Preemptive)**:  
-Mengubah algoritma penjadwalan default (Round Robin) menjadi algoritma Non-Preemptive Priority Scheduling pada sistem operasi xv6. Proses dengan prioritas lebih tinggi (angka prioritas lebih kecil) akan dipilih untuk dijalankan terlebih dahulu tanpa interupsi hingga proses selesai atau berubah status.
+**Modul 2 – Penjadwalan CPU Lanjutan (Priority Scheduling Non-Preemptive)**:
+
+* Mengubah algoritma penjadwalan default (Round Robin) menjadi algoritma Non-Preemptive Priority Scheduling pada sistem operasi xv6. Proses dengan prioritas lebih tinggi (angka prioritas lebih kecil) akan dipilih untuk dijalankan terlebih dahulu tanpa interupsi hingga proses selesai atau berubah status.
 ---
 
 ## 🛠️ Rincian Implementasi
