@@ -38,7 +38,7 @@ Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6
 ---
 
 ## ✅ Uji Fungsionalitas
-
+Program uji yang digunakan:
 * cowtest: untuk menguji fork dengan Copy-on-Write
 * shmtest: untuk menguji shmget() dan shmrelease()
 
@@ -46,7 +46,7 @@ Pada modul ini dilakukan dua eksperimen besar terkait manajemen memori dalam xv6
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal.
+Hasil uji berupa output terminal dan screenshot.
 
 ### 📍 Output `cowtest`:
 
