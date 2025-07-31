@@ -29,7 +29,7 @@ Program uji yang digunakan:
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal.
+Hasil uji berupa output terminal dan screenshot.
 
 ### 📍 Output `ptest`:
 
