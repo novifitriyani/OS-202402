@@ -45,7 +45,7 @@ PID     MEM     NAME
 3       12288   ptest
 ```
 
-### 📍 Contoh Output `rtest`:
+### 📍 Output `rtest`:
 
 ```
 Read Count Sebelum: 12
